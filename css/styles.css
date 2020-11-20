@@ -1,11 +1,30 @@
 .main{
   display: flex;
+  height: 100%;
+  width: 100%;
   align-items: center;
   flex-direction: column;
 }
 
 .main h1{
+  font-size:5.5rem;
   margin-top:1.5rem;
+  font-family: 'Amatic SC', cursive;
+}
+
+#main_strong-1{
+  color: #99C2FF;
+  text-shadow: 0 0 5px #000;
+}
+
+#main_strong-2{
+  color: #FFD9FF;
+  text-shadow: 0 0 5px #000;
+}
+
+#main_strong-3{
+  color: #FFFFE6;
+  text-shadow: 0 0 5px #000;
 }
 
 .wrapper{
@@ -13,75 +32,85 @@
   grid-template-columns: repeat(20, 2.5rem);
   grid-template-rows: repeat(18, 1.5rem);
   grid-gap: 2px;
-  margin: 5rem 5rem;
+  margin: 2rem auto;
+}
+
+#item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-family: 'Amatic SC', cursive;
 }
 
 .one{
-  grid-column: 3/6;
+  grid-column: 2/5;
   grid-row: 2/7;
-  border: 1px solid black;
-  background-color: silver;
+  background-color: #D8BFD8;
 }
 
 .two{
   grid-column: 4/8;
   grid-row: 5/11;
-  border: 1px solid black;
-  background-color: silver;
+  background-color: #99C2FF;
 }
 
 .three{
   grid-column: 3/5;
   grid-row: 9/13;
-  border: 1px solid black;
-  background-color: silver;
+  background-color: #FFD9FF;
 }
 
 .four{
   grid-column: 7/10;
   grid-row: 3/6;
-  border: 1px solid black;
-  background-color: silver;
+  background-color: #FFD9E6;
 }
 
 .five{
   grid-column: 9/12;
   grid-row: 7/12;
-  border: 1px solid black;
-  background-color: silver;
+  background-color: #C2E5D2;
 }
 
 .six{
   grid-column: 6/14;
   grid-row: 13/15;
-  border: 1px solid black;
-  background-color: silver;
+  background-color: #FFFFE6;
 }
 
 .seven{
   grid-column: 9/11;
   grid-row: 16/18;
-  border: 1px solid black;
-  background-color: silver;
+  background-color: #C2E5D2;
 }
 
 .eight{
   grid-column: 11/15;
   grid-row: 2/6;
-  border: 1px solid black;
-  background-color: silver;
+  background-color: #FFD9E6;
 }
 
 .nine{
   grid-column: 14/19;
   grid-row: 3/8;
-  border: 1px solid black;
-  background-color: silver;
+  background-color: #99C2FF;
 }
 
 .ten{
   grid-column: 13/18;
   grid-row: 9/12;
-  border: 1px solid black;
-  background-color: silver;
+  background-color: #FFD9FF;
+}
+
+.ten:hover{
+  animation-name: moverigth;
+  background-color: black;
+}
+
+@keyframes moverigth {
+
 }
